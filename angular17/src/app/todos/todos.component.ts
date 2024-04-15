@@ -19,16 +19,17 @@ export class TodosComponent implements OnInit {
   }
 
   filterTodos() {
-    if (this.searchTerm.trim() === '') {
+    if (this.searchTerm.trim() === '' ) {
       // If the search term is empty, display all todos
       this.filteredTodos = this.todos;
     } else {
       // Filter todos by title containing the search term
       this.filteredTodos = this.todos.filter(todo =>
-        todo.title.toLowerCase().includes(this.searchTerm.toLowerCase())
+        todo.title.toLowerCase().includes(this.searchTerm.toLowerCase()) 
       );
     }
   }
+
 
   getTodos() {
     this.http.get<Todo[]>('https://jsonplaceholder.typicode.com/todos').subscribe(

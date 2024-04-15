@@ -1,6 +1,12 @@
 <div class="container">
     <h2>Todos</h2>
-    <input type="search" [(ngModel)]="searchTerm" name="searchTerm" (input)="filterTodos()"> <br> <br>
+    <div class="row">
+      <div class="col-sm-3">
+        <input type="search" class="form-control" [(ngModel)]="searchTerm" name="searchTerm"  (input)="filterTodos()" placeholder="Search by title"> 
+      </div>
+    
+    </div>
+    <br> <br>
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let todo of filteredTodos">
         {{ todo.title }}
