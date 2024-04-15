@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-sm-6" *ngFor="let user of users">
+        <div class="card" >
+            <div class="card-body">
+                <h5 class="card-title">{{ user.name }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ user.username }}</h6>
+                <p class="card-text">Email: {{ user.email }}</p>
+                <p class="card-text">Phone: {{ user.phone }}</p>
+                <p class="card-text">Website: <a href="{{ user.website }}" class="card-link">{{ user.website }}</a></p>
+                <address>
+                  <p class="card-text">Address: {{ user.address.street }}, {{ user.address.suite }}, {{ user.address.city }}, {{ user.address.zipcode }}</p>
+                </address>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Company: {{ user.company.name }}</li>
+                  <li class="list-group-item">Catchphrase: "{{ user.company.catchPhrase }}"</li>
+                  <li class="list-group-item">BS: {{ user.company.bs }}</li>
+                </ul>
+              </div> 
+         
+         </div><br>
+        </div>
+</div>
+
+
+
+
+  

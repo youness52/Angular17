@@ -1,5 +1,5 @@
 {
-  "name": "demo",
+  "name": "angular17",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -18,9 +18,9 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
-    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
     "rxjs": "~7.8.0",
-    "tslib": "^2.6.2",
+    "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
